@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.youtube{
+    height: 800px;
+    display: grid;
+    background-color: rgb(32,32,32);
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 115px 1fr;
+}
+
+/* ******* SOL KISIM ****** */
+.toolbar-left{
+    background-color: (32,32,32);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+.leftbar-item{
+    height: 40px;
+}
+.left-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(32,32,32);
+    border: none;
+    color: white;
+    width: 240px;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto,Arial,sans-serif;
+    cursor: pointer;
+    /* position: fixed; */
+}
+.btn-split{
+    padding-bottom: 52px;
+    border-bottom: 1px;
+    border-bottom-style:ridge ;
+    border-color: rgb(56, 56, 56);
+    margin-bottom: 10px;
+}
+.left-btn:hover{
+    background-color: rgb(56, 56, 56);
+}
+.menu-btn:hover,.youtube-btn:hover{
+    background-color: rgb(32,32,32);
+}
+i{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.left-item1{
+    display: flex;
+    height: 68px;
+}
+.left-btn2{
+    background-color: rgb(56, 56, 56);
+}
+.menu-btn{
+    width: 1px;
+}
+.fa-youtube-play{
+    margin-top: 15px;
+    margin-right: 0px;
+    padding-bottom: 14px;
+}
+.ytb{
+    width: 200px;
+    display: flex;
+}
+.ytb-txt{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    transform: translate(60px,20px);
+}
+/* ********** ÜST KISIM ******** */
+.toolbar-top{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* up */
+.top-up{
+    background-color: rgb(32,32,32);
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0px 11px 0px;
+}
+.search-part{
+    margin-left: 170px;
+}
+.search-button{
+    background-color: rgb(56, 56, 56);
+    position: absolute;
+    height: 35px;
+    width: 60px;
+    cursor: pointer;
+}
+.search-mic{
+    position: absolute;
+    margin-left: 70px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.user-part{
+    display: flex;
+    align-items: center;
+}
+.user-item{
+    background-color: rgb(32,32,32);
+    color: white;
+    padding: 0px;
+    border: 0px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.user-profil{
+    margin-right: 35px;
+}
+/* down */
+.top-down{
+    background-color: rgb(32,32,32);
+    padding: 10px 0px 12px 0px;
+    border-style: solid;
+    border-left: 1px;
+    border-color: rgb(56, 56, 56);
+}
+.category{
+    background-color: rgb(56, 56, 56);
+    padding: 8px 15px;
+    border-radius: 30px;
+    margin: 0px 3px;
+    color: white;
+    cursor: pointer;
+    border: 1px;
+    border-color: rgb(76,76,76);
+    border-style: solid;
+}
+.category:hover{
+    background-color: rgb(76,76,76);
+}
+.category-all{
+    background-color: white;
+    margin-left: 20px;
+    color: black;
+}
+.category-all:hover{
+    background-color: white;
+}
+
+/* ********** İÇERİK KISMI ******** */
+.content{
+    background-color: rgb(24,24,24);
+}
+.video-grid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.video-card{
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.vid-link{
+    text-decoration: none;
+}
+.vid-details{
+    display: flex;
+    background-color: rgb(24,24,24);
+}
+.channel-logo{
+    height: 36px;
+    width: 36px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-image: url(https://unsplash.it/36/36);
+}
+.vid-desc{
+    max-width: 240px;
+}
+.vid-title{
+    color: white;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.vid-views,.vid-channel{
+    color: rgb(170,170,170);
+    padding-top: 3px;
+    font-size: 12px;
+}
+.card-img{
+    height:166px ;
+    width: 296px;
+}
+.fa-ellipsis-v{
+    visibility: hidden;
+    background-color: rgb(24,24,24);
+    color: white;
+}
+.video-card:hover .fa-ellipsis-v{
+    visibility: visible;
+}
+.video-card:hover .card{
+    position: absolute;
+    z-index: 99;
+    transform: scale(1.3,1.5);
+    transition: 0.7s;
+    transition-delay: 1.3s;
+    
+}
+.card-img:hover{
+    /* animation-duration: 1s;
+    animation-delay: 1s;
+    content: url(https://unsplash.it/36/36); */
+    animation: 6s 2.2s forwards infinite normal running flowRight;
+}
+@keyframes flowRight {
+	from {
+		content: url(https://unsplash.it/294/166);
+	}
+
+	25% {
+		content: url(https://unsplash.it/295/166);
+	}
+
+	50% {
+		content: url(https://unsplash.it/296/167);
+		/* border-radius: 100%;  */
+	}
+
+	75% {
+        content: url(https://unsplash.it/297/166);
+		/* box-shadow: 4px 4px 8px 4px snow;  */
+	}
+	to {
+        content: url(https://unsplash.it/298/166);
+	}
+}
+
+
+
+
+@media (max-width: 1400px) {
+	.video-grid{
+        width: 1000px;
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1100px) {
+	.video-grid{
+        width: 700px;
+        grid-template-columns:  1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+	.video-grid{
+        width: 500px;
+        grid-template-columns:  1fr;
+    }
+}

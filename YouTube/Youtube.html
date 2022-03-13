@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="YouTube.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="youtube">
+        <aside class="toolbar-left">
+            <ul class="leftbar-list">
+                <li class="leftbar-item left-item1">
+                    <button class="left-btn menu-btn"><i class="fa fa-bars" style="font-size: x-large;"></i></button>
+                        <div class="ytb">
+                            <button class="left-btn youtube-btn" style="font-size: xx-large;"><i class="fa fa-youtube-play"></i></button>
+                            <p class="ytb-txt">YouTube</p>
+                        </div>   
+                </li>
+                <li class="leftbar-item ">
+                    <button class="left-btn left-btn2"><i class="fa fa-home" style="font-size: x-large;"></i>Ana Sayfa</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-compass" style="font-size: x-large;"></i>Keşfet</button>
+                </li>
+                <li class="leftbar-item btn-split">
+                    <button class="left-btn"><i class="fa fa-caret-square-o-right" style="font-size: x-large;"></i>Abonelikler</button>
+                </li>
+                <li class="leftbar-item" id="bnm">
+                    <button class="left-btn"><i class="fa fa-book" style="font-size: x-large;"></i>Kitaplık</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-history" style="font-size: x-large;"></i>Geçmiş</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-play" style="font-size: x-large; border-style: initial;"></i>Videolarınız</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-clock-o" style="font-size: x-large;"></i>Daha sonra izle</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-thumbs-o-up" style="font-size: x-large;"></i>Beğendiğim videolar</button>
+                </li>
+                <li class="leftbar-item">
+                    <button class="left-btn"><i class="fa fa-angle-down" style="font-size: x-large;"></i>Daha fazla göster</button>
+                </li>
+            </ul>
+        </aside>
+
+        <nav class="toolbar-top">
+            <div class="top-up">
+                <div class="search-part">
+                    <input type="text" placeholder="  Ara" style="width: 575px; height: 35px; background-color: rgb(18,18,18); color: white ;">
+                    <button class="search-button fa fa-search" style="font-size: large; color:white;"></button>
+                    <button class="search-mic fa fa-microphone" style="font-size: large; background-color: rgb(24,24,24); color: white;"></button>
+                </div>
+                <div class="user-part">
+                    <button class="user-item fa fa-video-camera" style="font-size: large;"></button>
+                    <button class="user-item fa fa-th" style="font-size: large;"></button>
+                    <button class="user-item fa fa-bell-o" style="font-size: large;"></button>
+                    <button class="user-item fa fa-user-circle-o" style="font-size: xx-large;"></button>
+                </div>
+
+            </div>
+            <div class="top-down">
+                <button class="category category-all">Tümü</button>
+                <button class="category">Oyun</button>
+                <button class="category">Müzik</button>
+                <button class="category">Animasyon</button>
+                <button class="category">Canlı</button>
+                <button class="category">Fulbol</button>
+                <button class="category">El sanatları</button>
+                <button class="category">Çizgi filmler</button>
+                <button class="category">Görsel Sanatlar</button>
+                <button class="category">Görsel sanatlar</button>
+                <button class="category">Son yüklenilenler</button>
+                <button class="category">İzlenilenler</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            
+            <div class="video-grid">
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://i.ytimg.com/vi/TKZVUtvjBdM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArCyG6qbcRlUbNq63hotrBds50Pg"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/297/165"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/297/164"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/296/164"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/296/166"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/295/165"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/295/167"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-card ">
+                        <a class="vid-link" href="https://www.youtube.com/watch?v=TKZVUtvjBdM&ab_channel=JeffersonAirplneVEVO">
+                            <div class="card"> 
+                                <div class="vid-preview">
+                                    <img src="https://unsplash.it/296/168"      alt="" class="card-img" />
+                                </div>
+                                <div class="vid-details">
+                                    <div class="vid-logo">
+                                        <button class="channel-logo"></button>
+                                    </div>
+                                    <div class="vid-desc">
+                                        <h4 class="vid-title">Jefferson     Airplane - White Rabbit (Official Lyric     Video)</h4>
+                                        <p class="vid-channel">Jefferson    Airplane</p>
+                                        <p class="vid-views">686 B     görüntülenme - 2 ay önce</p>
+                                    </div>
+                                    <div>
+                                        <button id="vgh#" class="fa fa-ellipsis-v"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
